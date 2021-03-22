@@ -1,0 +1,1195 @@
+{
+  "cases":[
+    
+  ],
+  "suites":[
+    {
+      "id":1,
+      "title":"Admin panel",
+      "description":null,
+      "preconditions":null,
+      "suites":[
+        {
+          "id":2,
+          "title":"Left side menu",
+          "description":"Functional testing of left side menu.",
+          "preconditions":"User have a permission for admin.",
+          "suites":[
+            {
+              "id":3,
+              "title":"Menu \"\u041a\u0430\u0442\u0430\u043b\u043e\u0433\"",
+              "description":null,
+              "preconditions":null,
+              "suites":[
+                
+              ],
+              "cases":[
+                {
+                  "id":7,
+                  "title":"Add new item in menu \"\u0421\u0442\u0440\u0430\u043d\u0438\u0446\u0438\"",
+                  "description":null,
+                  "preconditions":"1. Web side is opened. \u00a0[http:\/\/qa-stoyan.hopixit.bg\/admin\/](http:\/\/qa-stoyan.hopixit.bg\/admin\/user\/login)\n\n2. Admin is logged in (**user:** shop **pass:** qa_oshi)",
+                  "postconditions":null,
+                  "priority":"high",
+                  "severity":"major",
+                  "behavior":"positive",
+                  "type":"functional",
+                  "automation":"is-not-automated",
+                  "status":"actual",
+                  "milestone":null,
+                  "custom_fields":[
+                    
+                  ],
+                  "steps":[
+                    {
+                      "position":1,
+                      "action":"Click on the \u201c\u041a\u0430\u0442\u0430\u043b\u043e\u0433\u201c button on the left side menu.",
+                      "expected_result":"Expands menu \u201c\u041a\u0430\u0442\u0430\u043b\u043e\u0433\u201c",
+                      "data":""
+                    },
+                    {
+                      "position":2,
+                      "action":"Click on the \u201c\u0421\u0442\u0430\u043d\u0438\u0446\u0438\u201c button on the menu \u201c\u041a\u0430\u0442\u0430\u043b\u043e\u0433\u201c",
+                      "expected_result":"Redirect to menu \u201c\u0421\u0442\u0440\u0430\u043d\u0438\u0446\u0438\u201c.",
+                      "data":""
+                    },
+                    {
+                      "position":3,
+                      "action":"Click on the \u201c\u0414\u043e\u0431\u0430\u0432\u0438\u201c button on the top right corner.",
+                      "expected_result":"Redirect to panel for creating new pages.",
+                      "data":""
+                    },
+                    {
+                      "position":4,
+                      "action":"Fill the fields.",
+                      "expected_result":"",
+                      "data":""
+                    },
+                    {
+                      "position":5,
+                      "action":"Turn on\/off flags you wish.",
+                      "expected_result":"",
+                      "data":""
+                    },
+                    {
+                      "position":6,
+                      "action":"Press the \u201c\u0414\u043e\u0431\u0430\u0432\u0438\u201c on the right side",
+                      "expected_result":"1. New page is successful created.\n\n2. Redirect to menu \u201c\u0421\u0442\u0440\u0430\u043d\u0438\u0446\u0438\u201c",
+                      "data":""
+                    }
+                  ]
+                },
+                {
+                  "id":8,
+                  "title":"Sort item in menu \"\u0421\u0442\u0440\u0430\u043d\u0438\u0446\u0438\"",
+                  "description":null,
+                  "preconditions":"1. Web side is opened. \u00a0[http:\/\/qa-stoyan.hopixit.bg\/admin\/](http:\/\/qa-stoyan.hopixit.bg\/admin\/user\/login)\n\n2. Admin is logged in (**user:** shop **pass:** qa_oshi)",
+                  "postconditions":null,
+                  "priority":"medium",
+                  "severity":"normal",
+                  "behavior":"positive",
+                  "type":"functional",
+                  "automation":"is-not-automated",
+                  "status":"actual",
+                  "milestone":null,
+                  "custom_fields":[
+                    
+                  ],
+                  "steps":[
+                    {
+                      "position":1,
+                      "action":"Click on the \u201c\u041a\u0430\u0442\u0430\u043b\u043e\u0433\u201c button on the left side menu.",
+                      "expected_result":"Expands menu \u201c\u041a\u0430\u0442\u0430\u043b\u043e\u0433\u201c",
+                      "data":""
+                    },
+                    {
+                      "position":2,
+                      "action":"Click on the \u201c\u0421\u0442\u0430\u043d\u0438\u0446\u0438\u201c button on the menu \u201c\u041a\u0430\u0442\u0430\u043b\u043e\u0433\u201c",
+                      "expected_result":"Redirect to menu \u201c\u0421\u0442\u0440\u0430\u043d\u0438\u0446\u0438\u201c.",
+                      "data":""
+                    },
+                    {
+                      "position":3,
+                      "action":"Click on the \u201c\u0421\u043e\u0440\u0442\u0438\u0440\u0430\u043d\u0435\u201c button on the top right corner.",
+                      "expected_result":"Redirect to sorting panel.",
+                      "data":""
+                    },
+                    {
+                      "position":4,
+                      "action":"Sort by moving an item up or down.",
+                      "expected_result":"",
+                      "data":""
+                    },
+                    {
+                      "position":5,
+                      "action":"Press the \u201c\u0417\u0430\u043f\u0438\u0448\u0438\u201c button below the items.",
+                      "expected_result":"Sorting is saved.\n\nRedirect to menu \u201c\u0421\u0442\u0440\u0430\u043d\u0438\u0446\u0438\u201c",
+                      "data":""
+                    }
+                  ]
+                },
+                {
+                  "id":9,
+                  "title":"Change the number of visible idems",
+                  "description":null,
+                  "preconditions":"1. Web side is opened. \u00a0[http:\/\/qa-stoyan.hopixit.bg\/admin\/](http:\/\/qa-stoyan.hopixit.bg\/admin\/user\/login)\n\n2. Admin is logged in (**user:** shop **pass:** qa_oshi)",
+                  "postconditions":null,
+                  "priority":"low",
+                  "severity":"normal",
+                  "behavior":"positive",
+                  "type":"functional",
+                  "automation":"is-not-automated",
+                  "status":"actual",
+                  "milestone":null,
+                  "custom_fields":[
+                    
+                  ],
+                  "steps":[
+                    {
+                      "position":1,
+                      "action":"Click on the \u201c\u041a\u0430\u0442\u0430\u043b\u043e\u0433\u201c button on the left side menu.",
+                      "expected_result":"Expands menu \u201c\u041a\u0430\u0442\u0430\u043b\u043e\u0433\u201c",
+                      "data":""
+                    },
+                    {
+                      "position":2,
+                      "action":"Click on the \u201c\u0421\u0442\u0430\u043d\u0438\u0446\u0438\u201c button on the menu \u201c\u041a\u0430\u0442\u0430\u043b\u043e\u0433\u201c",
+                      "expected_result":"Redirect to menu \u201c\u0421\u0442\u0440\u0430\u043d\u0438\u0446\u0438\u201c.",
+                      "data":""
+                    },
+                    {
+                      "position":3,
+                      "action":"Click on drop down menu for number items.",
+                      "expected_result":"Shows drop down menu.",
+                      "data":""
+                    },
+                    {
+                      "position":4,
+                      "action":"Select number of items for showing.",
+                      "expected_result":"Number of items is changed.",
+                      "data":""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id":4,
+              "title":"Menu \"\u041f\u0440\u043e\u0434\u0430\u0436\u0431\u0438\"",
+              "description":null,
+              "preconditions":null,
+              "suites":[
+                
+              ],
+              "cases":[
+                {
+                  "id":10,
+                  "title":"Change order status.",
+                  "description":null,
+                  "preconditions":"1. Web side is opened. \u00a0[http:\/\/qa-stoyan.hopixit.bg\/admin\/](http:\/\/qa-stoyan.hopixit.bg\/admin\/user\/login)\n\n2. Admin is logged in (**user:** shop **pass:** qa_oshi)",
+                  "postconditions":null,
+                  "priority":"high",
+                  "severity":"critical",
+                  "behavior":"positive",
+                  "type":"functional",
+                  "automation":"is-not-automated",
+                  "status":"actual",
+                  "milestone":null,
+                  "custom_fields":[
+                    
+                  ],
+                  "steps":[
+                    {
+                      "position":1,
+                      "action":"Click on the \u201c\u041f\u0440\u043e\u0434\u0430\u0436\u0431\u0438\u201c button on the left side menu.",
+                      "expected_result":"Expands menu \u201c\u041f\u0440\u043e\u0434\u0430\u0436\u0431\u0438\u201c",
+                      "data":""
+                    },
+                    {
+                      "position":2,
+                      "action":"Click on the \u201c\u041f\u043e\u0440\u044a\u0447\u043a\u0438\u201c button.",
+                      "expected_result":"Redirect to orders page.",
+                      "data":""
+                    },
+                    {
+                      "position":3,
+                      "action":"Click on the drop down menu \u201c\u0421\u0442\u0430\u0442\u0443\u0441\u201c",
+                      "expected_result":"Shows context menu.",
+                      "data":""
+                    },
+                    {
+                      "position":4,
+                      "action":"Click on new status.",
+                      "expected_result":"Order status are changed.",
+                      "data":""
+                    }
+                  ]
+                },
+                {
+                  "id":11,
+                  "title":"Manual add order.",
+                  "description":null,
+                  "preconditions":"1. Web side is opened. \u00a0[http:\/\/qa-stoyan.hopixit.bg\/admin\/](http:\/\/qa-stoyan.hopixit.bg\/admin\/user\/login)\n\n2. Admin is logged in (**user:** shop **pass:** qa_oshi)",
+                  "postconditions":null,
+                  "priority":"high",
+                  "severity":"major",
+                  "behavior":"positive",
+                  "type":"functional",
+                  "automation":"is-not-automated",
+                  "status":"actual",
+                  "milestone":null,
+                  "custom_fields":[
+                    
+                  ],
+                  "steps":[
+                    {
+                      "position":1,
+                      "action":"Click on the \u201c\u041f\u0440\u043e\u0434\u0430\u0436\u0431\u0438\u201c button on the left side menu.",
+                      "expected_result":"Expands menu \u201c\u041f\u0440\u043e\u0434\u0430\u0436\u0431\u0438\u201c.",
+                      "data":""
+                    },
+                    {
+                      "position":2,
+                      "action":"Click on the \u201c\u041f\u043e\u0440\u044a\u0447\u043a\u0438\u201c button.",
+                      "expected_result":"Redirect to orders page.",
+                      "data":""
+                    },
+                    {
+                      "position":3,
+                      "action":"Click on the \u201c\u0414\u043e\u0431\u0430\u0432\u0438\u201c button on the top right corner.",
+                      "expected_result":"Redirect in panel to create a new order.",
+                      "data":""
+                    },
+                    {
+                      "position":4,
+                      "action":"Fill the mandatory fields.",
+                      "expected_result":"",
+                      "data":""
+                    },
+                    {
+                      "position":5,
+                      "action":"Click on the \u201c\u0414\u043e\u0431\u0430\u0432\u0438\u201c button on the right side menu.",
+                      "expected_result":"1. Order is successful created.\n\n2. Redirect to orders page.",
+                      "data":""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id":5,
+              "title":"Menu \"\u0414\u043e\u0441\u0442\u0430\u0432\u043a\u0438\"",
+              "description":null,
+              "preconditions":null,
+              "suites":[
+                
+              ],
+              "cases":[
+                {
+                  "id":12,
+                  "title":"Add new waybill",
+                  "description":null,
+                  "preconditions":"1. Web side is opened. \u00a0[http:\/\/qa-stoyan.hopixit.bg\/admin\/](http:\/\/qa-stoyan.hopixit.bg\/admin\/user\/login)\n\n2. Admin is logged in (**user:** shop **pass:** qa_oshi)",
+                  "postconditions":null,
+                  "priority":"high",
+                  "severity":"major",
+                  "behavior":"positive",
+                  "type":"functional",
+                  "automation":"is-not-automated",
+                  "status":"actual",
+                  "milestone":null,
+                  "custom_fields":[
+                    
+                  ],
+                  "steps":[
+                    {
+                      "position":1,
+                      "action":"Click on the \u201c\u0414\u043e\u0441\u0442\u0430\u0432\u043a\u0438\u201c button on the left side menu.",
+                      "expected_result":"Expands menu \u201c\u0414\u043e\u0441\u0442\u0430\u0432\u043a\u0438\u201c",
+                      "data":""
+                    },
+                    {
+                      "position":2,
+                      "action":"Click on the \u201c\u0422\u043e\u0432\u0430\u0440\u0438\u0442\u0435\u043b\u043d\u0438\u0446\u0438\u201c button.",
+                      "expected_result":"Redirect to waybill page.",
+                      "data":""
+                    },
+                    {
+                      "position":3,
+                      "action":"Hoover on the \u201c\u0414\u043e\u0431\u0430\u0432\u0438\u201c button in the top right corner.",
+                      "expected_result":"Shows context menu.",
+                      "data":""
+                    },
+                    {
+                      "position":4,
+                      "action":"Click on the name of the courier you are looking for.",
+                      "expected_result":"Redirect to panel to create a waybill.",
+                      "data":""
+                    },
+                    {
+                      "position":5,
+                      "action":"Fill the mandatory fields.",
+                      "expected_result":"",
+                      "data":""
+                    },
+                    {
+                      "position":6,
+                      "action":"Click on the \u201c\u0414\u043e\u0431\u0430\u0432\u0438\u201c button below the fields.",
+                      "expected_result":"1. Successful created a waybill.\n\n2. Redirect to waybills page.",
+                      "data":""
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "cases":[
+            
+          ]
+        },
+        {
+          "id":10,
+          "title":"Functions menu.",
+          "description":null,
+          "preconditions":null,
+          "suites":[
+            
+          ],
+          "cases":[
+            {
+              "id":6,
+              "title":"Change site language.",
+              "description":null,
+              "preconditions":"1. Web side is opened. \u00a0[http:\/\/qa-stoyan.hopixit.bg\/admin\/](http:\/\/qa-stoyan.hopixit.bg\/admin\/user\/login)\n\n2. Admin is logged in (**user:** shop **pass:** qa_oshi)",
+              "postconditions":null,
+              "priority":"high",
+              "severity":"major",
+              "behavior":"positive",
+              "type":"functional",
+              "automation":"is-not-automated",
+              "status":"actual",
+              "milestone":null,
+              "custom_fields":[
+                
+              ],
+              "steps":[
+                {
+                  "position":1,
+                  "action":"Click on the BG\/UK flag on the top right corner in the admin panel.",
+                  "expected_result":"Shows drop down menu with language options.",
+                  "data":""
+                },
+                {
+                  "position":2,
+                  "action":"Click on the language you want.",
+                  "expected_result":"All texts on the site change their language.",
+                  "data":""
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cases":[
+        {
+          "id":1,
+          "title":"Successful login with valid credentials for admin.",
+          "description":null,
+          "preconditions":"We have credentials and permissions for administrator",
+          "postconditions":null,
+          "priority":"high",
+          "severity":"critical",
+          "behavior":"positive",
+          "type":"functional",
+          "automation":"is-not-automated",
+          "status":"actual",
+          "milestone":null,
+          "custom_fields":[
+            
+          ],
+          "steps":[
+            {
+              "position":1,
+              "action":"Open link <http:\/\/qa-stoyan.hopixit.bg\/admin\/user\/login> in your browser.",
+              "expected_result":"Site are displayed on the screen.",
+              "data":""
+            },
+            {
+              "position":2,
+              "action":"Enter your admin credentials.",
+              "expected_result":"",
+              "data":"Username: **shop**\n\nPassword: **qa_oshi**"
+            },
+            {
+              "position":3,
+              "action":"Press \u201cEnter\u201c or \u201c\u0412\u0445\u043e\u0434\u201c button bellow the fields.",
+              "expected_result":"1\\.Successful login like admin.\n\n2\\.Redirect to admin panel",
+              "data":""
+            }
+          ]
+        },
+        {
+          "id":2,
+          "title":"Unsuccessful login with invalid username and valid password.",
+          "description":null,
+          "preconditions":null,
+          "postconditions":null,
+          "priority":"high",
+          "severity":"major",
+          "behavior":"negative",
+          "type":"functional",
+          "automation":"is-not-automated",
+          "status":"actual",
+          "milestone":null,
+          "custom_fields":[
+            
+          ],
+          "steps":[
+            {
+              "position":1,
+              "action":"Open link <http:\/\/qa-stoyan.hopixit.bg\/admin\/user\/login> in your browser.",
+              "expected_result":"Site are displayed on the screen.",
+              "data":""
+            },
+            {
+              "position":2,
+              "action":"Enter invalid credentials for user",
+              "expected_result":"",
+              "data":"Username: stoyan\n\nPassword: qa_oshi"
+            },
+            {
+              "position":3,
+              "action":"Press \u201cEnter\u201c or \u201c\u0412\u0445\u043e\u0434\u201c button bellow the fields.",
+              "expected_result":"1. Unsuccessful login like admin.\n\n\n2. Shows clear message of error.",
+              "data":""
+            }
+          ]
+        },
+        {
+          "id":3,
+          "title":"Unsuccessful login with missing username and valid password.",
+          "description":null,
+          "preconditions":null,
+          "postconditions":null,
+          "priority":"high",
+          "severity":"major",
+          "behavior":"negative",
+          "type":"functional",
+          "automation":"is-not-automated",
+          "status":"actual",
+          "milestone":null,
+          "custom_fields":[
+            
+          ],
+          "steps":[
+            {
+              "position":1,
+              "action":"Open link <http:\/\/qa-stoyan.hopixit.bg\/admin\/user\/login> in your browser.",
+              "expected_result":"Site are displayed on the screen.",
+              "data":""
+            },
+            {
+              "position":2,
+              "action":"Leave the username field blank",
+              "expected_result":"",
+              "data":""
+            },
+            {
+              "position":3,
+              "action":"Enter valid password",
+              "expected_result":"",
+              "data":"Password: qa_oshi"
+            },
+            {
+              "position":4,
+              "action":"Press \u201cEnter\u201c or \u201c\u0412\u0445\u043e\u0434\u201c button bellow the fields.",
+              "expected_result":"1. Unsuccessful login like admin.\n\n\n2. Shows clear message of error.",
+              "data":""
+            }
+          ]
+        },
+        {
+          "id":4,
+          "title":"Unsuccessful login with valid username and invalid password.",
+          "description":null,
+          "preconditions":null,
+          "postconditions":null,
+          "priority":"high",
+          "severity":"major",
+          "behavior":"negative",
+          "type":"functional",
+          "automation":"is-not-automated",
+          "status":"actual",
+          "milestone":null,
+          "custom_fields":[
+            
+          ],
+          "steps":[
+            {
+              "position":1,
+              "action":"Open link <http:\/\/qa-stoyan.hopixit.bg\/admin\/user\/login> in your browser.",
+              "expected_result":"Site are displayed on the screen.",
+              "data":""
+            },
+            {
+              "position":2,
+              "action":"Enter valid username",
+              "expected_result":"",
+              "data":"Username: shop"
+            },
+            {
+              "position":3,
+              "action":"Enter invalid password.",
+              "expected_result":"",
+              "data":"Password:123456"
+            },
+            {
+              "position":4,
+              "action":"Press \u201cEnter\u201c or \u201c\u0412\u0445\u043e\u0434\u201c button bellow the fields.",
+              "expected_result":"1. Unsuccessful login like admin.\n\n\n2. Shows clear message of error.",
+              "data":""
+            }
+          ]
+        },
+        {
+          "id":5,
+          "title":"Unsuccessful login with valid username and missing password.",
+          "description":null,
+          "preconditions":null,
+          "postconditions":null,
+          "priority":"high",
+          "severity":"major",
+          "behavior":"negative",
+          "type":"functional",
+          "automation":"is-not-automated",
+          "status":"actual",
+          "milestone":null,
+          "custom_fields":[
+            
+          ],
+          "steps":[
+            {
+              "position":1,
+              "action":"Open link <http:\/\/qa-stoyan.hopixit.bg\/admin\/user\/login> in your browser.",
+              "expected_result":"Site are displayed on the screen.",
+              "data":""
+            },
+            {
+              "position":2,
+              "action":"Enter valid username.",
+              "expected_result":"",
+              "data":"Username: shop"
+            },
+            {
+              "position":3,
+              "action":"Leave the password field blank.",
+              "expected_result":"",
+              "data":""
+            },
+            {
+              "position":4,
+              "action":"Press \u201cEnter\u201c or \u201c\u0412\u0445\u043e\u0434\u201c button bellow the fields.",
+              "expected_result":"1. Unsuccessful login like admin.\n\n\n2. Shows clear message of error.",
+              "data":""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id":6,
+      "title":"User interface",
+      "description":"Frontend functional testing of UI",
+      "preconditions":null,
+      "suites":[
+        {
+          "id":7,
+          "title":"Sign up",
+          "description":null,
+          "preconditions":null,
+          "suites":[
+            
+          ],
+          "cases":[
+            {
+              "id":13,
+              "title":"Create new user",
+              "description":null,
+              "preconditions":null,
+              "postconditions":null,
+              "priority":"high",
+              "severity":"major",
+              "behavior":"positive",
+              "type":"functional",
+              "automation":"is-not-automated",
+              "status":"actual",
+              "milestone":null,
+              "custom_fields":[
+                
+              ],
+              "steps":[
+                {
+                  "position":1,
+                  "action":"Open link [http:\/\/qa-stoyan.hopixit.bg\/](http:\/\/qa-marin.hopixit.bg\/admin) in your browser.",
+                  "expected_result":"Website is loaded.",
+                  "data":""
+                },
+                {
+                  "position":2,
+                  "action":"Click on the \u201c\u0420\u0435\u0433\u0438\u0441\u0442\u0440\u0430\u0446\u0438\u044f\u201c button in the top right corner.",
+                  "expected_result":"Redirect to registration form.",
+                  "data":""
+                },
+                {
+                  "position":3,
+                  "action":"Enter valid email",
+                  "expected_result":"",
+                  "data":""
+                },
+                {
+                  "position":4,
+                  "action":"Enter password - minimum 6 characters.",
+                  "expected_result":"",
+                  "data":""
+                },
+                {
+                  "position":5,
+                  "action":"Check the mandatory checkboxes.",
+                  "expected_result":"",
+                  "data":""
+                },
+                {
+                  "position":6,
+                  "action":"Press the \u201c\u0420\u0435\u0433\u0438\u0441\u0442\u0440\u0430\u0446\u0438\u044f\u201c button.",
+                  "expected_result":"1. Successful registration.\n\n2. Redirect to the site with the new logged account.",
+                  "data":""
+                }
+              ]
+            },
+            {
+              "id":14,
+              "title":"Create new user with invalid email and valid password.",
+              "description":null,
+              "preconditions":null,
+              "postconditions":null,
+              "priority":"high",
+              "severity":"major",
+              "behavior":"negative",
+              "type":"functional",
+              "automation":"is-not-automated",
+              "status":"actual",
+              "milestone":null,
+              "custom_fields":[
+                
+              ],
+              "steps":[
+                {
+                  "position":1,
+                  "action":"Open link\u00a0[http:\/\/qa-stoyan.hopixit.bg\/](http:\/\/qa-marin.hopixit.bg\/admin)\u00a0in your browser.",
+                  "expected_result":"Website is loaded.",
+                  "data":""
+                },
+                {
+                  "position":2,
+                  "action":"Click on the \u201c\u0420\u0435\u0433\u0438\u0441\u0442\u0440\u0430\u0446\u0438\u044f\u201c button in the top right corner.",
+                  "expected_result":"Redirect to registration form.",
+                  "data":""
+                },
+                {
+                  "position":3,
+                  "action":"Enter invalid format for email.",
+                  "expected_result":"Shows clear error message.",
+                  "data":""
+                },
+                {
+                  "position":4,
+                  "action":"Enter valid password - minimum 6 characters.",
+                  "expected_result":"",
+                  "data":""
+                },
+                {
+                  "position":5,
+                  "action":"Check the mandatory checkboxes.",
+                  "expected_result":"",
+                  "data":""
+                },
+                {
+                  "position":6,
+                  "action":"Press the \u201c\u0420\u0435\u0433\u0438\u0441\u0442\u0440\u0430\u0446\u0438\u044f\u201c button.",
+                  "expected_result":"1. Unsuccessful registration.\n\n2. Shows clear error massage.",
+                  "data":""
+                }
+              ]
+            },
+            {
+              "id":15,
+              "title":"Create new user with valid email and too short password.",
+              "description":null,
+              "preconditions":null,
+              "postconditions":null,
+              "priority":"high",
+              "severity":"major",
+              "behavior":"negative",
+              "type":"functional",
+              "automation":"is-not-automated",
+              "status":"actual",
+              "milestone":null,
+              "custom_fields":[
+                
+              ],
+              "steps":[
+                {
+                  "position":1,
+                  "action":"Open link\u00a0[http:\/\/qa-stoyan.hopixit.bg\/](http:\/\/qa-marin.hopixit.bg\/admin)\u00a0in your browser.",
+                  "expected_result":"Website is loaded.",
+                  "data":""
+                },
+                {
+                  "position":2,
+                  "action":"Click on the \u201c\u0420\u0435\u0433\u0438\u0441\u0442\u0440\u0430\u0446\u0438\u044f\u201c button in the top right corner.",
+                  "expected_result":"Redirect to registration form.",
+                  "data":""
+                },
+                {
+                  "position":3,
+                  "action":"Enter valid email.",
+                  "expected_result":"",
+                  "data":""
+                },
+                {
+                  "position":4,
+                  "action":"Enter invalid password - no more then 5 characters.",
+                  "expected_result":"Shows clear error message.",
+                  "data":""
+                },
+                {
+                  "position":5,
+                  "action":"Check the mandatory checkboxes.",
+                  "expected_result":"",
+                  "data":""
+                },
+                {
+                  "position":6,
+                  "action":"Press the \u201c\u0420\u0435\u0433\u0438\u0441\u0442\u0440\u0430\u0446\u0438\u044f\u201c button.",
+                  "expected_result":"1. Unsuccessful registration.\n\n2. Shows clear error massage.",
+                  "data":""
+                }
+              ]
+            },
+            {
+              "id":16,
+              "title":"Create new user without agree \"General terms\" and \"Privacy policy\".",
+              "description":null,
+              "preconditions":null,
+              "postconditions":null,
+              "priority":"high",
+              "severity":"major",
+              "behavior":"negative",
+              "type":"functional",
+              "automation":"is-not-automated",
+              "status":"actual",
+              "milestone":null,
+              "custom_fields":[
+                
+              ],
+              "steps":[
+                {
+                  "position":1,
+                  "action":"Open link\u00a0[http:\/\/qa-stoyan.hopixit.bg\/](http:\/\/qa-marin.hopixit.bg\/admin)\u00a0in your browser.",
+                  "expected_result":"Website is loaded.",
+                  "data":""
+                },
+                {
+                  "position":2,
+                  "action":"Click on the \u201c\u0420\u0435\u0433\u0438\u0441\u0442\u0440\u0430\u0446\u0438\u044f\u201c button in the top right corner.",
+                  "expected_result":"Redirect to registration form.",
+                  "data":""
+                },
+                {
+                  "position":3,
+                  "action":"Enter valid email.",
+                  "expected_result":"",
+                  "data":""
+                },
+                {
+                  "position":4,
+                  "action":"Enter valid password - minimum 6 characters.",
+                  "expected_result":"",
+                  "data":""
+                },
+                {
+                  "position":5,
+                  "action":"Do not check to agree \"General terms\" and \"Privacy policy\".",
+                  "expected_result":"",
+                  "data":""
+                },
+                {
+                  "position":6,
+                  "action":"Press the \u201c\u0420\u0435\u0433\u0438\u0441\u0442\u0440\u0430\u0446\u0438\u044f\u201c button.",
+                  "expected_result":"1. Unsuccessful registration.\n\n2. Shows clear error massage.",
+                  "data":""
+                }
+              ]
+            },
+            {
+              "id":17,
+              "title":"Create new user with an already registered email and valid password.",
+              "description":null,
+              "preconditions":null,
+              "postconditions":null,
+              "priority":"high",
+              "severity":"major",
+              "behavior":"negative",
+              "type":"functional",
+              "automation":"is-not-automated",
+              "status":"actual",
+              "milestone":null,
+              "custom_fields":[
+                
+              ],
+              "steps":[
+                {
+                  "position":1,
+                  "action":"Open link\u00a0[http:\/\/qa-stoyan.hopixit.bg\/](http:\/\/qa-marin.hopixit.bg\/admin)\u00a0in your browser.",
+                  "expected_result":"Website is loaded.",
+                  "data":""
+                },
+                {
+                  "position":2,
+                  "action":"Click on the \u201c\u0420\u0435\u0433\u0438\u0441\u0442\u0440\u0430\u0446\u0438\u044f\u201c button in the top right corner.",
+                  "expected_result":"Redirect to registration form.",
+                  "data":""
+                },
+                {
+                  "position":3,
+                  "action":"Enter already registered email.",
+                  "expected_result":"Shows clear error message.",
+                  "data":"mytestmail@gmail.com"
+                },
+                {
+                  "position":4,
+                  "action":"Enter valid password - minimum 6 characters.",
+                  "expected_result":"",
+                  "data":""
+                },
+                {
+                  "position":5,
+                  "action":"Check the mandatory checkboxes.",
+                  "expected_result":"",
+                  "data":""
+                },
+                {
+                  "position":6,
+                  "action":"Press the \u201c\u0420\u0435\u0433\u0438\u0441\u0442\u0440\u0430\u0446\u0438\u044f\u201c button.",
+                  "expected_result":"1. Unsuccessful registration.\n\n2. Shows clear error massage.",
+                  "data":""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id":8,
+          "title":"Sing in",
+          "description":null,
+          "preconditions":null,
+          "suites":[
+            
+          ],
+          "cases":[
+            {
+              "id":18,
+              "title":"Sign in with already registered username\/email and password",
+              "description":null,
+              "preconditions":"Have already registered email and password.",
+              "postconditions":null,
+              "priority":"high",
+              "severity":"major",
+              "behavior":"positive",
+              "type":"functional",
+              "automation":"is-not-automated",
+              "status":"actual",
+              "milestone":null,
+              "custom_fields":[
+                
+              ],
+              "steps":[
+                {
+                  "position":1,
+                  "action":"Open link http:\/\/qa-stoyan.hopixit.bg\/ in your browser.",
+                  "expected_result":"Website is loaded.",
+                  "data":""
+                },
+                {
+                  "position":2,
+                  "action":"Click on the \u201c\u0412\u0445\u043e\u0434\u201c button on the top right corner.",
+                  "expected_result":"Redirect to login form.",
+                  "data":""
+                },
+                {
+                  "position":3,
+                  "action":"Enter already registered credentials.",
+                  "expected_result":"",
+                  "data":"email: mytestmail@gmail.com\n\npassword: 123456"
+                },
+                {
+                  "position":4,
+                  "action":"Press the \u201c\u0412\u0445\u043e\u0434\u201c button below the fields.",
+                  "expected_result":"1. Successful sing in.\n\n2. Redirect to main page.",
+                  "data":""
+                }
+              ]
+            },
+            {
+              "id":19,
+              "title":"Sign in with Facebook profile.",
+              "description":null,
+              "preconditions":null,
+              "postconditions":null,
+              "priority":"medium",
+              "severity":"normal",
+              "behavior":"positive",
+              "type":"functional",
+              "automation":"is-not-automated",
+              "status":"actual",
+              "milestone":null,
+              "custom_fields":[
+                
+              ],
+              "steps":[
+                {
+                  "position":1,
+                  "action":"Open link http:\/\/qa-stoyan.hopixit.bg\/ in your browser.",
+                  "expected_result":"Website is loaded.",
+                  "data":""
+                },
+                {
+                  "position":2,
+                  "action":"Click on the \u201c\u0412\u0445\u043e\u0434\u201c button on the top right corner.",
+                  "expected_result":"Redirect to login form.",
+                  "data":""
+                },
+                {
+                  "position":3,
+                  "action":"Press the \u201cFacebook\u201c icon below the fields.",
+                  "expected_result":"Redirect to Facebook for accept permissions to use user data.",
+                  "data":""
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cases":[
+        {
+          "id":20,
+          "title":"Add product to cart.",
+          "description":null,
+          "preconditions":"1. User is already logged.\n\n2. Main page is loaded.",
+          "postconditions":null,
+          "priority":"high",
+          "severity":"major",
+          "behavior":"positive",
+          "type":"functional",
+          "automation":"is-not-automated",
+          "status":"actual",
+          "milestone":null,
+          "custom_fields":[
+            
+          ],
+          "steps":[
+            {
+              "position":1,
+              "action":"Hover on the \u201c\u041a\u0430\u0442\u0435\u0433\u043e\u0440\u0438\u0438\u201c button.",
+              "expected_result":"Expands context menu.",
+              "data":""
+            },
+            {
+              "position":2,
+              "action":"Click on the \u201c\u0422\u043e\u0440\u0442\u0438\u201c button on the left side in the context menu.",
+              "expected_result":"Redirect to page \u201c\u0422\u043e\u0440\u0442\u0438\u201c.",
+              "data":""
+            },
+            {
+              "position":3,
+              "action":"Click on the one of products.",
+              "expected_result":"Shows pop up window with detailed information for the product.",
+              "data":""
+            },
+            {
+              "position":4,
+              "action":"Select quantity of the product.",
+              "expected_result":"",
+              "data":""
+            },
+            {
+              "position":5,
+              "action":"Click on the \u201c\u041a\u0443\u043f\u0438\u201c button in the pop up window.",
+              "expected_result":"1. Product is added to cart.\n\n2. Shows new pop up window.",
+              "data":""
+            }
+          ]
+        },
+        {
+          "id":21,
+          "title":"Finalizing an order.",
+          "description":null,
+          "preconditions":"1. Website is loaded.\n\n2. User is logged in.\n\n3. Already have added products in cart.",
+          "postconditions":null,
+          "priority":"high",
+          "severity":"major",
+          "behavior":"positive",
+          "type":"functional",
+          "automation":"is-not-automated",
+          "status":"actual",
+          "milestone":null,
+          "custom_fields":[
+            
+          ],
+          "steps":[
+            {
+              "position":1,
+              "action":"Hover on the \u201cCart\u201c icon in the top right corner.",
+              "expected_result":"Shows context menu.",
+              "data":""
+            },
+            {
+              "position":2,
+              "action":"Click on the \u201c\u041f\u043e\u0440\u044a\u0447\u043a\u0430\u201c button down in the context menu.",
+              "expected_result":"Redirect to order details page.",
+              "data":""
+            },
+            {
+              "position":3,
+              "action":"Fill the mandatory fields. e.g. \u0418\u043c\u0435, \u0430\u0434\u0440\u0435\u0441, \u043c\u0435\u0442\u043e\u0434 \u043d\u0430 \u043f\u043b\u0430\u0449\u0430\u043d\u0435, \u043c\u0435\u0442\u043e\u0434 \u043d\u0430 \u0434\u043e\u0441\u0442\u0430\u0432\u043a\u0430",
+              "expected_result":"",
+              "data":""
+            },
+            {
+              "position":4,
+              "action":"Click on the \u201c\u041f\u043e\u0440\u044a\u0447\u043a\u0430\u201c button below the fields.",
+              "expected_result":"1. Display order confirmation message.\n\n2. Sends an email with order details.",
+              "data":""
+            }
+          ]
+        },
+        {
+          "id":22,
+          "title":"Add product to favorites.",
+          "description":null,
+          "preconditions":"1. Website is opened.\n\n2. User is logged in.",
+          "postconditions":"1. Product is added to favorites.",
+          "priority":"low",
+          "severity":"minor",
+          "behavior":"positive",
+          "type":"functional",
+          "automation":"is-not-automated",
+          "status":"actual",
+          "milestone":null,
+          "custom_fields":[
+            
+          ],
+          "steps":[
+            {
+              "position":1,
+              "action":"Hover on the \u201c\u041a\u0430\u0442\u0435\u0433\u043e\u0440\u0438\u0438\u201c button.",
+              "expected_result":"Expands context menu.",
+              "data":""
+            },
+            {
+              "position":2,
+              "action":"Click on the \u201c\u0422\u043e\u0440\u0442\u0438\u201c button on the left side in the context menu.",
+              "expected_result":"Redirect to page \u201c\u0422\u043e\u0440\u0442\u0438\u201c.",
+              "data":""
+            },
+            {
+              "position":3,
+              "action":"Hover on the picture of product.",
+              "expected_result":"Shows \u201c\u0411\u044a\u0440\u0437 \u043f\u0440\u0435\u0433\u043b\u0435\u0434\u201c button.",
+              "data":""
+            },
+            {
+              "position":4,
+              "action":"Click on the icon with red heart in the corner of picture.",
+              "expected_result":"1. Product is added to favorites.\n\n2. Shows clear message.",
+              "data":""
+            }
+          ]
+        },
+        {
+          "id":23,
+          "title":"Compare a products.",
+          "description":null,
+          "preconditions":"1. Website is opened.\n\n2. User is logged in.",
+          "postconditions":null,
+          "priority":"medium",
+          "severity":"normal",
+          "behavior":"positive",
+          "type":"functional",
+          "automation":"is-not-automated",
+          "status":"actual",
+          "milestone":null,
+          "custom_fields":[
+            
+          ],
+          "steps":[
+            {
+              "position":1,
+              "action":"Hover on the \u201c\u041a\u0430\u0442\u0435\u0433\u043e\u0440\u0438\u0438\u201c button.",
+              "expected_result":"Expands context menu.",
+              "data":""
+            },
+            {
+              "position":2,
+              "action":"Click on the \u201c\u0422\u043e\u0440\u0442\u0438\u201c button on the left side in the context menu.",
+              "expected_result":"Redirect to page \u201c\u0422\u043e\u0440\u0442\u0438\u201c.",
+              "data":""
+            },
+            {
+              "position":3,
+              "action":"Hover on the picture of one product.",
+              "expected_result":"Shows \u201c\u0411\u044a\u0440\u0437 \u043f\u0440\u0435\u0433\u043b\u0435\u0434\u201c button.",
+              "data":""
+            },
+            {
+              "position":4,
+              "action":"Click on the \u201c\u0411\u044a\u0440\u0437 \u043f\u0440\u0435\u0433\u043b\u0435\u0434\u201c button.",
+              "expected_result":"Shows pop up window with product details.",
+              "data":""
+            },
+            {
+              "position":5,
+              "action":"Click on the \u201c\u0414\u043e\u0431\u0430\u0432\u0438 \u0437\u0430 \u0441\u0440\u0430\u0432\u043d\u0435\u043d\u0438\u0435\u201cicon",
+              "expected_result":"1. Product is added to compare.\n\n2. Redirect to product page.",
+              "data":""
+            },
+            {
+              "position":6,
+              "action":"Hover on the picture of other product.",
+              "expected_result":"Shows \u201c\u0411\u044a\u0440\u0437 \u043f\u0440\u0435\u0433\u043b\u0435\u0434\u201c button.",
+              "data":""
+            },
+            {
+              "position":7,
+              "action":"Click on the \u201c\u0411\u044a\u0440\u0437 \u043f\u0440\u0435\u0433\u043b\u0435\u0434\u201c button.",
+              "expected_result":"Shows pop up window with product details.",
+              "data":""
+            },
+            {
+              "position":8,
+              "action":"Click on the \u201c\u0414\u043e\u0431\u0430\u0432\u0438 \u0437\u0430 \u0441\u0440\u0430\u0432\u043d\u0435\u043d\u0438\u0435\u201cicon",
+              "expected_result":"1. Product is added to compare.\n\n2. Redirect to product page.",
+              "data":""
+            },
+            {
+              "position":9,
+              "action":"Click on the \u201c\u0421\u0440\u0430\u0432\u043d\u0435\u043d\u0438\u0435 \u043d\u0430 \u043f\u0440\u043e\u0434\u0443\u043a\u0442\u0438\u201c link on top of the site.",
+              "expected_result":"Redirect to compare page.",
+              "data":""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
